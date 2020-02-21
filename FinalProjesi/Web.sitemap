@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Harita"  description="">
+    <siteMapNode url="" title="Sayfa" description="">
+      <siteMapNode url="anasayfa.aspx" title="Anasayfa"  description="" ></siteMapNode>
+      <siteMapNode url="" title="Sayfalar" description="">
+        <siteMapNode url="sporhaberleri.aspx" title="Spor Haberleri"  description="" />
+        <siteMapNode url="moda.aspx" title="Galeri"  description="" />
+        <siteMapNode url="dunyamagazini.aspx" title="Yorumlar"  description="" />
+        <siteMapNode url="yeni.aspx" title="Yorum Gönder"  description="" />
+        <siteMapNode url="galeri.aspx" title="Takımlar"  description="" />
+         <siteMapNode url="#" title="Puan Durumu"  description="" />
+        <siteMapNode url="iletisim.aspx" title="İletişim"  description="" />
+        <siteMapNode url="hakkinda.aspx" title="Hakkında"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+   
+  </siteMapNode>
+</siteMap>

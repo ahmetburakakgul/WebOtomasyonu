@@ -1,0 +1,6 @@
+c:\users\casper\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\bin\FinalProjesi.dll.config
+c:\users\casper\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\bin\FinalProjesi.dll
+c:\users\casper\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\bin\FinalProjesi.pdb
+c:\users\casper\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\obj\Debug\FinalProjesi.dll
+c:\users\casper\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\obj\Debug\FinalProjesi.pdb
+C:\Users\CASPER\documents\visual studio 2013\Projects\FinalProjesi\FinalProjesi\obj\Debug\FinalProjesi.csprojResolveAssemblyReference.cache

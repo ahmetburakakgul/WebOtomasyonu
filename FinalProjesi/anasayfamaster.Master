@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="anasayfamaster.master.cs" Inherits="FinalProjesi.anasayfamaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ 
+	<title>Süper Lig</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<div class="topbar">
+				<div class="content-topbar container h-100">
+                    <div class="logo">
+					&nbsp;<a href="anasayfa.aspx"><img src="images/icons/logo-01.png" alt="LOGO"></a></div>
+					<div class="left-topbar">	                        											
+						<asp:LinkButton ID="lbkaydol" runat="server" CssClass="left-topbar-item" OnClick="lbkaydol_Click">Kaydol</asp:LinkButton>
+						<asp:LinkButton ID="lbgiris" runat="server" CssClass="left-topbar-item" OnClick="lbgiris_Click">Giriş Yap</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="left-topbar-item"></asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton4" runat="server" CssClass="left-topbar-item" OnClick="LinkButton4_Click">Çıkış</asp:LinkButton>
+
+					</div>					
+				</div>
+			</div>
+			<!-- Header Mobile -->
+			<div class="wrap-header-mobile">
+				<!-- Logo moblie -->		
+				<div class="logo-mobile">
+					<a href="anasayfa.aspx"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+				</div>
+
+				<!-- Button show menu -->
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze m-r--8">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>
+			</div>							
+			<!--  -->
+			<div class="wrap-main-nav">
+				<div class="menu-desktop">
+					<!-- Menu desktop -->
+					<nav class="mega-menu-item">
+						<a class="logo-stick" href="index.html">
+							<img src="images/icons/logo-01.png" alt="LOGO">
+						</a>
+						<ul class="main-menu">
+							<li>
+								<a href="anasayfa.aspx">Anasayfa</a>								
+							</li>
+							<li class="mega-menu-item">
+								<a href="galeri.aspx">Galeri</a>								
+							</li>
+							<li class="mega-menu-item">
+								<a href="sporhaberleri.aspx">Haberler</a>								
+							</li>
+							<li class="mega-menu-item">
+                                <asp:LinkButton ID="lbhaftamac" runat="server" Visible="false" OnClick="lbhaftamac_Click">Fikstür</asp:LinkButton>							
+							</li>
+							<li class="mega-menu-item">
+                                <asp:LinkButton ID="lbyorum" runat="server" OnClick="lbyorum_Click" Visible="false">Yorumlar</asp:LinkButton>
+							</li>
+							<li class="mega-menu-item">
+                                <asp:LinkButton ID="lbPuan" runat="server" Visible="false" OnClick="lbPuan_Click">Puan Durumu</asp:LinkButton>							
+							</li>							
+                            <li class="mega-menu-item">
+                                <asp:LinkButton ID="lbtransfer" runat="server" OnClick="lbtransfer_Click" Visible="false">Transfer</asp:LinkButton>							
+							</li>
+							<li class="mega-menu-item">
+                                <asp:LinkButton ID="lbyorumyap" runat="server" OnClick="lbyorumyap_Click" Visible="false">Yorum Yap</asp:LinkButton>							
+							</li>
+                            <li class="mega-menu-item">
+                                <%Response.Write(menutut); %>							
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+		</div>
+	</header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      
+        </asp:ContentPlaceHolder>        	<!-- Footer -->
+	<footer>
+		<div class="bg2 p-t-40 p-b-25">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 p-b-20">
+						<div class="size-h-3 flex-s-c">
+							<a>
+                                <img class="max-s-full" src="images/icons/logo-02.png" alt="LOGO">
+							</a>
+						</div>
+						<div>						
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4 p-b-20">						
+					</div>
+					<div class="col-sm-6 col-lg-4 p-b-20">
+						<div class="size-h-3 flex-s-c">
+							<h5 class="f1-m-7 cl0">
+								Site İçeriği
+							</h5>
+						</div>
+						<ul class="m-t--12">
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Spor Haberleri
+								</a>
+							</li>
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Yorumlar
+								</a>
+							</li>
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Galeri
+								</a>
+							</li>
+							<li class="how-bor1 p-rl-5 p-tb-10">
+								<a href="#" class="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
+									Takımlar
+								</a>
+							</li>	
+                            <li class="how-bor1 p-rl-5 p-tb-10">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg11">
+			<div class="container size-h-4 flex-c-c p-tb-15">
+				<span class="f1-s-1 cl0 txt-center">
+					Copyright © 2018 
+					<a href="#" class="f1-s-1 cl10 hov-link1">Colorlib.</a>
+					All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Label ID="Label1" runat="server" Text="Toplam Ziyaretçi = "></asp:Label>
+							    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Label ID="Label3" runat="server" Text="Online Kullanıcı = "></asp:Label>
+                                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+							&nbsp;
+				</span>
+			</div>
+		</div>
+	</footer>
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<span class="fas fa-angle-up"></span>
+		</span>
+	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+    </form>
+</body>
+</html>

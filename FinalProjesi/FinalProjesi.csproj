@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE7C0B6-78E8-4477-9D74-147B11DEF361}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalProjesi</RootNamespace>
+    <AssemblyName>FinalProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminanasayfa.aspx" />
+    <Content Include="admin\css\ie.css" />
+    <Content Include="admin\css\invalid.css" />
+    <Content Include="admin\css\reset.css" />
+    <Content Include="admin\css\style.css" />
+    <Content Include="admin\images\b.png" />
+    <Content Include="admin\images\bg-body.gif" />
+    <Content Include="admin\images\bg-button-green.gif" />
+    <Content Include="admin\images\bg-content-box.gif" />
+    <Content Include="admin\images\bg-form-field.gif" />
+    <Content Include="admin\images\bg-login-top.png" />
+    <Content Include="admin\images\bg-login.gif" />
+    <Content Include="admin\images\bg-menu-item-current.gif" />
+    <Content Include="admin\images\bg-menu-item-green.gif" />
+    <Content Include="admin\images\bg-radial-gradient.gif" />
+    <Content Include="admin\images\bg-sidebar.gif" />
+    <Content Include="admin\images\bl.png" />
+    <Content Include="admin\images\br.png" />
+    <Content Include="admin\images\closelabel.gif" />
+    <Content Include="admin\images\icons\bullet_black.png" />
+    <Content Include="admin\images\icons\clock_48.png" />
+    <Content Include="admin\images\icons\comment_48.png" />
+    <Content Include="admin\images\icons\cross.png" />
+    <Content Include="admin\images\icons\cross_circle.png" />
+    <Content Include="admin\images\icons\cross_grey_small.png" />
+    <Content Include="admin\images\icons\exclamation.png" />
+    <Content Include="admin\images\icons\hammer_screwdriver.png" />
+    <Content Include="admin\images\icons\image_add_48.png" />
+    <Content Include="admin\images\icons\information.png" />
+    <Content Include="admin\images\icons\jquery.wysiwyg.gif" />
+    <Content Include="admin\images\icons\paper_content_pencil_48.png" />
+    <Content Include="admin\images\icons\pencil.png" />
+    <Content Include="admin\images\icons\pencil_48.png" />
+    <Content Include="admin\images\icons\tick_circle.png" />
+    <Content Include="admin\images\logo.png" />
+    <Content Include="admin\images\menu-current-arrow.gif" />
+    <Content Include="admin\images\shortcut-button-bg.gif" />
+    <Content Include="admin\images\tl.png" />
+    <Content Include="admin\images\tr.png" />
+    <Content Include="admin\index.html" />
+    <Content Include="admin\scripts\DD_belatedPNG_0.0.7a.js" />
+    <Content Include="admin\scripts\facebox.js" />
+    <Content Include="admin\scripts\jquery-1.3.2.min.js" />
+    <Content Include="admin\scripts\jquery.wysiwyg.js" />
+    <Content Include="admin\scripts\simpla.jquery.configuration.js" />
+    <Content Include="anasayfa.aspx" />
+    <Content Include="css\main.css" />
+    <Content Include="css\util.css" />
+    <Content Include="css\util.min.css" />
+    <Content Include="duyuruayarlari.aspx" />
+    <Content Include="duyurugoster.aspx" />
+    <Content Include="fikstür.aspx" />
+    <Content Include="fikstürayarlari.aspx" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-brands.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-brands.min.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-regular.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-regular.min.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-solid.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fa-solid.min.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fontawesome-all.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fontawesome-all.min.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fontawesome.css" />
+    <Content Include="fonts\fontawesome-5.0.8\css\fontawesome.min.css" />
+    <Content Include="fonts\fontawesome-5.0.8\js\fontawesome-all.min.js" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-brands-400.svg" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-regular-400.svg" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-solid-900.svg" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="fonts\Lato\OFL.txt" />
+    <Content Include="galeri.aspx" />
+    <Content Include="galeriyönetimi.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="haberyönetimi.aspx" />
+    <Content Include="images\banner-01.jpg" />
+    <Content Include="images\banner-02.jpg" />
+    <Content Include="images\banner-03.jpg" />
+    <Content Include="images\blog-detail-01.jpg" />
+    <Content Include="images\blog-list-01.jpg" />
+    <Content Include="images\blog-list-02.jpg" />
+    <Content Include="images\blog-list-03.jpg" />
+    <Content Include="images\blog-list-04.jpg" />
+    <Content Include="images\blog-list-05.jpg" />
+    <Content Include="images\blog-list-06.jpg" />
+    <Content Include="images\entertaiment-01.jpg" />
+    <Content Include="images\entertaiment-02.jpg" />
+    <Content Include="images\entertaiment-03.jpg" />
+    <Content Include="images\entertaiment-04.jpg" />
+    <Content Include="images\entertaiment-05.jpg" />
+    <Content Include="images\entertaiment-06.jpg" />
+    <Content Include="images\entertaiment-07.jpg" />
+    <Content Include="images\entertaiment-08.jpg" />
+    <Content Include="images\entertaiment-09.jpg" />
+    <Content Include="images\entertaiment-10.jpg" />
+    <Content Include="images\entertaiment-11.jpg" />
+    <Content Include="images\entertaiment-12.jpg" />
+    <Content Include="images\entertaiment-13.jpg" />
+    <Content Include="images\entertaiment-14.jpg" />
+    <Content Include="images\entertaiment-15.jpg" />
+    <Content Include="images\entertaiment-16.jpg" />
+    <Content Include="images\entertaiment-17.jpg" />
+    <Content Include="images\entertaiment-18.jpg" />
+    <Content Include="images\entertaiment-19.jpg" />
+    <Content Include="images\entertaiment-20.jpg" />
+    <Content Include="images\entertaiment-21.jpg" />
+    <Content Include="images\icons\favicon.png" />
+    <Content Include="images\icons\icon-night.png" />
+    <Content Include="images\icons\logo-01.png" />
+    <Content Include="images\icons\logo-02.png" />
+    <Content Include="images\latest-01.jpg" />
+    <Content Include="images\latest-02.jpg" />
+    <Content Include="images\latest-03.jpg" />
+    <Content Include="images\latest-04.jpg" />
+    <Content Include="images\latest-05.jpg" />
+    <Content Include="images\latest-06.jpg" />
+    <Content Include="images\popular-post-01.jpg" />
+    <Content Include="images\popular-post-02.jpg" />
+    <Content Include="images\popular-post-03.jpg" />
+    <Content Include="images\popular-post-04.jpg" />
+    <Content Include="images\popular-post-05.jpg" />
+    <Content Include="images\popular-post-06.jpg" />
+    <Content Include="images\post-01.jpg" />
+    <Content Include="images\post-02.jpg" />
+    <Content Include="images\post-03.jpg" />
+    <Content Include="images\post-04.jpg" />
+    <Content Include="images\post-05.jpg" />
+    <Content Include="images\post-06.jpg" />
+    <Content Include="images\post-07.jpg" />
+    <Content Include="images\post-08.jpg" />
+    <Content Include="images\post-09.jpg" />
+    <Content Include="images\post-10.jpg" />
+    <Content Include="images\post-11.jpg" />
+    <Content Include="images\post-12.jpg" />
+    <Content Include="images\post-13.jpg" />
+    <Content Include="images\post-14.jpg" />
+    <Content Include="images\post-15.jpg" />
+    <Content Include="images\post-16.jpg" />
+    <Content Include="images\post-17.jpg" />
+    <Content Include="images\post-18.jpg" />
+    <Content Include="images\post-19.jpg" />
+    <Content Include="images\post-20.jpg" />
+    <Content Include="images\post-21.jpg" />
+    <Content Include="images\post-22.jpg" />
+    <Content Include="images\post-23.jpg" />
+    <Content Include="images\post-24.jpg" />
+    <Content Include="images\post-25.jpg" />
+    <Content Include="images\post-26.jpg" />
+    <Content Include="images\post-27.jpg" />
+    <Content Include="images\post-28.jpg" />
+    <Content Include="images\post-29.jpg" />
+    <Content Include="images\post-30.jpg" />
+    <Content Include="images\post-31.jpg" />
+    <Content Include="images\post-32.jpg" />
+    <Content Include="images\post-33.jpg" />
+    <Content Include="images\post-34.jpg" />
+    <Content Include="images\post-35.jpg" />
+    <Content Include="images\post-36.jpg" />
+    <Content Include="images\post-37.jpg" />
+    <Content Include="images\post-38.jpg" />
+    <Content Include="images\post-39.jpg" />
+    <Content Include="images\post-40.jpg" />
+    <Content Include="images\post-41.jpg" />
+    <Content Include="images\post-42.jpg" />
+    <Content Include="images\post-43.jpg" />
+    <Content Include="images\post-44.jpg" />
+    <Content Include="images\post-45.jpg" />
+    <Content Include="images\post-46.jpg" />
+    <Content Include="images\post-47.jpg" />
+    <Content Include="images\post-48.jpg" />
+    <Content Include="images\post-49.jpg" />
+    <Content Include="images\post-50.jpg" />
+    <Content Include="images\video-01.jpg" />
+    <Content Include="js\main.js" />
+    <Content Include="kullaniciyonet.aspx" />
+    <Content Include="menu.xml" />
+    <Content Include="menüyönetimi.aspx" />
+    <Content Include="puandurumu.aspx" />
+    <Content Include="puandurumudüzenle.aspx" />
+    <Content Include="resimler\0x0-iste-2018-yilinin-en-cok-konusulan-magazin-olaylari-1545828618250.jpg" />
+    <Content Include="resimler\sirilsiklam-asik-sila-sef-sevgilisine-laf_12696070_663_z3_510.jpg" />
+    <Content Include="resimler\yeni-fragman-yayinlandi-doktor-ela-sosyal_12713538_2789_z2.jpg" />
+    <Content Include="sayfalar.aspx" />
+    <Content Include="sitemap.aspx" />
+    <Content Include="sizdengelenler.aspx" />
+    <Content Include="sporhaberleri.aspx" />
+    <Content Include="transferhaberleri.aspx" />
+    <Content Include="uyegiris.aspx" />
+    <Content Include="UyeGiris\css\main.css" />
+    <Content Include="UyeGiris\css\util.css" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="UyeGiris\fonts\montserrat\OFL.txt" />
+    <Content Include="UyeGiris\fonts\raleway\OFL.txt" />
+    <Content Include="UyeGiris\fonts\ubuntu\UFL.txt" />
+    <Content Include="UyeGiris\images\icons\favicon.ico" />
+    <Content Include="UyeGiris\images\icons\icon-google.png" />
+    <Content Include="UyeGiris\images\icons\map-marker.png" />
+    <Content Include="UyeGiris\images\icons\symbol-01.png" />
+    <Content Include="UyeGiris\index.html" />
+    <Content Include="UyeGiris\js\main.js" />
+    <Content Include="UyeGiris\vendor\animate\animate.css" />
+    <Content Include="UyeGiris\vendor\animsition\css\animsition.css" />
+    <Content Include="UyeGiris\vendor\animsition\css\animsition.min.css" />
+    <Content Include="UyeGiris\vendor\animsition\js\animsition.js" />
+    <Content Include="UyeGiris\vendor\animsition\js\animsition.min.js" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="UyeGiris\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="UyeGiris\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="UyeGiris\vendor\bootstrap\js\popper.js" />
+    <Content Include="UyeGiris\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="UyeGiris\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="UyeGiris\vendor\countdowntime\countdowntime.js" />
+    <Content Include="UyeGiris\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="UyeGiris\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="UyeGiris\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="UyeGiris\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="UyeGiris\vendor\daterangepicker\moment.js" />
+    <Content Include="UyeGiris\vendor\daterangepicker\moment.min.js" />
+    <Content Include="UyeGiris\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="UyeGiris\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="UyeGiris\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="UyeGiris\vendor\select2\select2.css" />
+    <Content Include="UyeGiris\vendor\select2\select2.js" />
+    <Content Include="UyeGiris\vendor\select2\select2.min.css" />
+    <Content Include="UyeGiris\vendor\select2\select2.min.js" />
+    <Content Include="uyekayit.aspx" />
+    <Content Include="vendor\animate\animate.css" />
+    <Content Include="vendor\animsition\css\animsition.css" />
+    <Content Include="vendor\animsition\css\animsition.min.css" />
+    <Content Include="vendor\animsition\js\animsition.js" />
+    <Content Include="vendor\animsition\js\animsition.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\js\popper.js" />
+    <Content Include="vendor\bootstrap\js\popper.min.js" />
+    <Content Include="vendor\bootstrap\js\tooltip.js" />
+    <Content Include="vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="yorumlar.aspx" />
+    <Content Include="yorumyap.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminanasayfa.aspx.cs">
+      <DependentUpon>adminanasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminanasayfa.aspx.designer.cs">
+      <DependentUpon>adminanasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpanel.Master.cs">
+      <DependentUpon>adminpanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpanel.Master.designer.cs">
+      <DependentUpon>adminpanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.aspx.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfa.aspx.designer.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfamaster.Master.cs">
+      <DependentUpon>anasayfamaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfamaster.Master.designer.cs">
+      <DependentUpon>anasayfamaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="duyuruayarlari.aspx.cs">
+      <DependentUpon>duyuruayarlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duyuruayarlari.aspx.designer.cs">
+      <DependentUpon>duyuruayarlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="duyurugoster.aspx.cs">
+      <DependentUpon>duyurugoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duyurugoster.aspx.designer.cs">
+      <DependentUpon>duyurugoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fikstür.aspx.cs">
+      <DependentUpon>fikstür.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fikstür.aspx.designer.cs">
+      <DependentUpon>fikstür.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fikstürayarlari.aspx.cs">
+      <DependentUpon>fikstürayarlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fikstürayarlari.aspx.designer.cs">
+      <DependentUpon>fikstürayarlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="galeri.aspx.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="galeri.aspx.designer.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="galeriyönetimi.aspx.cs">
+      <DependentUpon>galeriyönetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="galeriyönetimi.aspx.designer.cs">
+      <DependentUpon>galeriyönetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="haberyönetimi.aspx.cs">
+      <DependentUpon>haberyönetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="haberyönetimi.aspx.designer.cs">
+      <DependentUpon>haberyönetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciyonet.aspx.cs">
+      <DependentUpon>kullaniciyonet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullaniciyonet.aspx.designer.cs">
+      <DependentUpon>kullaniciyonet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menüyönetimi.aspx.cs">
+      <DependentUpon>menüyönetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menüyönetimi.aspx.designer.cs">
+      <DependentUpon>menüyönetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puandurumu.aspx.cs">
+      <DependentUpon>puandurumu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="puandurumu.aspx.designer.cs">
+      <DependentUpon>puandurumu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="puandurumudüzenle.aspx.cs">
+      <DependentUpon>puandurumudüzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="puandurumudüzenle.aspx.designer.cs">
+      <DependentUpon>puandurumudüzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sayfalar.aspx.cs">
+      <DependentUpon>sayfalar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sayfalar.aspx.designer.cs">
+      <DependentUpon>sayfalar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitemap.aspx.cs">
+      <DependentUpon>sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitemap.aspx.designer.cs">
+      <DependentUpon>sitemap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sizdengelenler.aspx.cs">
+      <DependentUpon>sizdengelenler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sizdengelenler.aspx.designer.cs">
+      <DependentUpon>sizdengelenler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sporhaberleri.aspx.cs">
+      <DependentUpon>sporhaberleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sporhaberleri.aspx.designer.cs">
+      <DependentUpon>sporhaberleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transferhaberleri.aspx.cs">
+      <DependentUpon>transferhaberleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transferhaberleri.aspx.designer.cs">
+      <DependentUpon>transferhaberleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uyegiris.aspx.cs">
+      <DependentUpon>uyegiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyegiris.aspx.designer.cs">
+      <DependentUpon>uyegiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uyekayit.aspx.cs">
+      <DependentUpon>uyekayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyekayit.aspx.designer.cs">
+      <DependentUpon>uyekayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yorumlar.aspx.cs">
+      <DependentUpon>yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yorumlar.aspx.designer.cs">
+      <DependentUpon>yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yorumyap.aspx.cs">
+      <DependentUpon>yorumyap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yorumyap.aspx.designer.cs">
+      <DependentUpon>yorumyap.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anasayfamaster.Master" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="UyeGiris\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="UyeGiris\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="UyeGiris\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="UyeGiris\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Black.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-BlackItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Bold.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-BoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-ExtraBold.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-ExtraBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-ExtraLight.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-ExtraLightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Italic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Light.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-LightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Medium.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-MediumItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Regular.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-SemiBold.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-SemiBoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-Thin.ttf" />
+    <Content Include="UyeGiris\fonts\raleway\Raleway-ThinItalic.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-Italic.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-Light.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-LightItalic.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-Medium.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <Content Include="UyeGiris\fonts\ubuntu\Ubuntu-Regular.ttf" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="UyeGiris\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Web.sitemap" />
+    <Content Include="adminpanel.Master" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-brands-400.eot" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-brands-400.ttf" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-brands-400.woff" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-brands-400.woff2" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-regular-400.eot" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-regular-400.ttf" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-regular-400.woff" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-regular-400.woff2" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-solid-900.eot" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-solid-900.ttf" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-solid-900.woff" />
+    <Content Include="fonts\fontawesome-5.0.8\webfonts\fa-solid-900.woff2" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="fonts\Lato\Lato-Black.ttf" />
+    <Content Include="fonts\Lato\Lato-BlackItalic.ttf" />
+    <Content Include="fonts\Lato\Lato-Bold.ttf" />
+    <Content Include="fonts\Lato\Lato-BoldItalic.ttf" />
+    <Content Include="fonts\Lato\Lato-Hairline.ttf" />
+    <Content Include="fonts\Lato\Lato-HairlineItalic.ttf" />
+    <Content Include="fonts\Lato\Lato-Italic.ttf" />
+    <Content Include="fonts\Lato\Lato-Light.ttf" />
+    <Content Include="fonts\Lato\Lato-LightItalic.ttf" />
+    <Content Include="fonts\Lato\Lato-Regular.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Bold.ttf" />
+    <Content Include="fonts\Roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Italic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Light.ttf" />
+    <Content Include="fonts\Roboto\Roboto-LightItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Medium.ttf" />
+    <Content Include="fonts\Roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Regular.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Thin.ttf" />
+    <Content Include="fonts\Roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\functions\" />
+    <Folder Include="resim\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59288</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59288/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
